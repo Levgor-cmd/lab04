@@ -1,4 +1,4 @@
-[![CMake CI](https://github.com/Wartheree/lab04/actions/workflows/ci.yml/badge.svg)](https://github.com/Wartheree/lab04/actions/workflows/ci.yml)
+[![CMake CI](https://github.com/Levgor-cmd/lab04/actions/workflows/ci.yml/badge.svg)](https://github.com/Wartheree/lab04/actions/workflows/ci.yml)
 ## Отчёт к лабораторной работе 04
 
 ### После ознакомления с учебным материалом приступим к выполнению инструкций учебного материала, адаптированным под github actions:
