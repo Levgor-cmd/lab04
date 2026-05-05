@@ -2,8 +2,8 @@
 
 ### После ознакомления с учебным материалом приступим к выполнению инструкций учебного материала:
 
+https://gist.github.com/Levgor-cmd/a461a5995a0c05ad81ded0d14e8fc5a8
 
-https://gist.github.com/Levgor-cmd/38665c48e45a1b457d9d50e8cc95d530
 ```bash
 
 lev@debian:~$ export GITHUB_USERNAME=Levgor-cmd
