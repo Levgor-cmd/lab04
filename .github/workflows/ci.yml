@@ -1,34 +1,30 @@
----
-name: CI
+name: CMake CI
 
 on:
   push:
-    branches: [main, master]
+    branches: [ master, main ]
   pull_request:
-    branches: [main, master]
+    branches: [ master, main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        compiler: [gcc, clang]
-
+    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y cmake g++ clang
-
-      - name: Configure CMake
-        run: cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install
-
-      - name: Build
-        run: cmake --build _build
-
-      - name: Install
-        run: cmake --build _build --target install
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Install CMake
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake cmake-data
+    
+    - name: Configure CMake
+      run: cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install
+    
+    - name: Build
+      run: cmake --build _build
+    
+    - name: Install
+      run: cmake --build _build --target install
+EOF
